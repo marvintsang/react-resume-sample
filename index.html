@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Sally Student resume" />
+    <title>Sally Student at your service</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <div id="app-root"></div>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script type="text/babel">
+        //insert scripts here
+    const target = document.querySelector('#app-root')
+    ReactDOM.render(
+  <App className='my-class'>
+    <h1>Current Page Title!</h1>
+  </App>,
+  target
+);
+
+    function App(){
+      
+      return (
+        <div className="resumeContent">
+        <header>
+          <h1 className="student"> Sally Student </h1>
+          <img src = "https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt = "Sorry, your current browser doesn't support jpg." width = "100" height = "100"></img>
+        </header>
+          <section id = "education">
+            <h2 className = "heading" id = "education_header">Education</h2>
+            <p className = "university">
+              University of Supers | 2011-2015
+            </p>
+          </section>
+          <section id = "employment">
+            <h2 className = "heading" id = "employment_header"> Employment </h2>
+            <h3 className = "subheading"> Bigger Bank | Project Manager | 2017-2019 </h3>
+            <p>
+              Created automated daily updates in order to reduce manual data entry and duplicate data entry
+            </p>
+            <h3 className = "subheading"> Big Bank | Business Analyst | 2015-2017 </h3>
+            <p>
+              Compiled large datasets of new customers in order to give them the best options for their savings and checking accounts
+            </p>
+          </section>
+          <section id = "skills">
+            <h1 className = "heading" id = "skills_header"> Skills </h1>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </section>
+          <address className = "address">
+            Contact me at : (555)555-5555 or <a href= "mailto:sally@student.com" target="_blank">sally@student.com</a>
+          </address>
+        
+        </div>
+          
+        
+      );
+      }
+  </script>
+</html>
